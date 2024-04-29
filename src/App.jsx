@@ -1,13 +1,13 @@
 import { useState } from "react";
 import NavBar from "./Components/NavBar";
-import Main from "./Components/MainFilm";
+import Films from "./Components/Films";
 import "./App.css";
 
 function App() {
   return (
     <>
       <NavBar />
-      <Main />
+      <Films />
     </>
   );
 }

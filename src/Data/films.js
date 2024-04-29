@@ -1,4 +1,4 @@
-const dataFilm = [
+const films = [
   {
     id: 0,
     Nom: "Pearl Harbor",
@@ -57,4 +57,4 @@ const dataFilm = [
   },
 ];
 
-export default dataFilm;
+export default films;
