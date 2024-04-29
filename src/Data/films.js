@@ -4,7 +4,8 @@ const films = [
     Nom: "Pearl Harbor",
     description:
       "Amis depuis la plus tendre enfance, Rafe McCawley et Danny Walker sont deux brillants pilotes de l'armée de l'air américaine. La Seconde Guerre mondiale a commencé, mais les États-Unis n'ont pas encore engagé les hostilités. Rafe succombe bientôt au charme d'Evelyn Johnson, une jeune infirmière. C'est le coup de foudre, mais ce dernier part combattre aux côtés des Britanniques. Evelyn et Danny sont, quant à eux, transférés sur la base américaine de Pearl Harbor.",
-    image: "assets/PearlHarbor.jpg",
+    image:
+      "https://m.media-amazon.com/images/I/61ILK79q65L._AC_UF1000,1000_QL80_.jpg",
     dateDeSortie: "06/06/2001",
   },
   {

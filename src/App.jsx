@@ -1,13 +1,15 @@
 import { useState } from "react";
 import NavBar from "./Components/NavBar";
-import Films from "./Components/Films";
+import Film from "./Components/Film";
+import films from "./Data/films";
+
 import "./App.css";
 
 function App() {
   return (
     <>
       <NavBar />
-      <Films />
+      <Film data={films} />
     </>
   );
 }
