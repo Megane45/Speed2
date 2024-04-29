@@ -1,8 +1,9 @@
 import logo from "../assets/logom3.jpg";
 import React from "react";
 import "./NavBar.css";
+import Film from "./Film";
 
-function NavBar() {
+function NavBar(props) {
   return (
     <header>
       <img src={logo} alt="Logo de mon site" />
@@ -10,7 +11,12 @@ function NavBar() {
       <section className="recherche-filter">
         <label htmlFor="description">
           Barre de recherche:
-          <input type="text" id="description" />
+          <input
+            type="text"
+            id="description"
+            value={props.nom}
+            onChange={(event) => props.setNom(event.target.value)}
+          />
         </label>
       </section>
     </header>

@@ -6,10 +6,12 @@ import films from "./Data/films";
 import "./App.css";
 
 function App() {
+  const [nom, setNom] = useState("");
+
   return (
     <>
-      <NavBar />
-      <Film data={films} />
+      <NavBar data={films} nom={nom} setNom={setNom} />
+      <Film data={films} nom={nom} setNom={setNom} />
     </>
   );
 }
