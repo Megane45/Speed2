@@ -1,25 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap");
+
 #root {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background: rgb(15, 201, 215);
+  background: radial-gradient(
+    circle,
+    rgba(15, 201, 215, 1) 0%,
+    rgba(9, 85, 121, 0.8575805322128851) 100%
+  );
 }
 
-.card {
-  background-color: #8daa91;
+.cards {
   h2 {
     text-align: center;
+    color: #e211d6;
+    text-shadow: 1px 0px 1px #cccccc, 0px 1px 1px #eeeeee, 2px 1px 1px #cccccc,
+      1px 2px 1px #eeeeee, 3px 2px 1px #cccccc, 2px 3px 1px #eeeeee,
+      4px 3px 1px #cccccc, 3px 4px 1px #eeeeee, 5px 4px 1px #cccccc,
+      4px 5px 1px #eeeeee, 6px 5px 1px #cccccc, 5px 6px 1px #eeeeee,
+      7px 6px 1px #cccccc;
+    font-size: 3rem;
   }
   .Films {
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    border: solid 3px;
-    width: 25rem;
-    height: 28rem;
-    background-color: #16697a;
-    img {
-      width: 30%;
-      border-radius: 30%;
+    gap: 2rem;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+
+    .card {
+      width: 25%;
+      text-align: center;
+      -webkit-box-shadow: 5px 5px 15px 5px #000000;
+      box-shadow: 5px 5px 15px 5px #000000;
+      background: rgb(15, 201, 215);
+      background: radial-gradient(
+        circle,
+        rgba(15, 201, 215, 1) 0%,
+        rgba(9, 85, 121, 0.8575805322128851) 100%
+      );
+
+      img {
+        width: 70%;
+        max-height: 50%;
+        border-radius: 30%;
+        align-items: center;
+        text-align: center;
+      }
     }
   }
+}
+
+.btn {
+  font-family: Roboto, sans-serif;
+  font-weight: 0;
+  font-size: 14px;
+  color: #fff;
+  background: linear-gradient(90deg, #0066cc 0%, #c500cc 100%);
+  padding: 10px 30px;
+  border: 2px solid #0066cc;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+  border-radius: 50px;
+  transition: 1000ms;
+  transform: translateY(0);
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transition: 1000ms;
+  padding: 10px 50px;
+  transform: translateY(-0px);
+  background: linear-gradient(90deg, #0066cc 0%, #c500cc 100%);
+  color: #0066cc;
+  border: solid 2px #0066cc;
 }

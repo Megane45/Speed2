@@ -1,16 +1,34 @@
+import React, { useState } from "react";
 import "./film.css";
-function Film({ data }) {
-  return (
-    <section className="card">
-      <h2>Films</h2>
-      <div className="Films">
-        <h3>{data[0].Nom}</h3>
-        <img src={data[0].image} alt={data[0].Nom} />
-        <p>{data[0].description}</p>
 
-        <p>{data[0].dateDeSortie}</p>
-      </div>
-    </section>
+function Film({ data }) {
+  const [showCount, setShowCount] = useState(3);
+
+  const handleShowMore = () => {
+    setShowCount(showCount + 3);
+  };
+
+  return (
+    <>
+      <section className="cards">
+        <h2>Films</h2>
+        <div className="Films">
+          {data.slice(0, showCount).map((film) => (
+            <div className="card" key={film.id}>
+              <h3>{film.Nom}</h3>
+              <img src={film.image} alt={film.Nom} />
+              <p>{film.description}</p>
+              <p>{film.dateDeSortie}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+      {showCount < data.length && (
+        <button className="btn" onClick={handleShowMore}>
+          Voir plus
+        </button>
+      )}
+    </>
   );
 }
 
