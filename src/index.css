@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "PinkyLove";
-  src: url(../assets/PinkyLove.ttf);
+  src: url(/src/assets/Pinky\ Love.ttf);
 }
 @font-face {
   font-family: "Skincake";
@@ -33,7 +33,6 @@
     font-size: 1.5rem;
     h3 {
       font-size: 2rem;
-      text-decoration: underline overline #000000;
     }
 
     img {

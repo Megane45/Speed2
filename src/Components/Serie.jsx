@@ -11,7 +11,7 @@ function Serie({ data, nom }) {
   return (
     <>
       <section className="cards">
-        <h2>Series</h2>
+        <h2>Séries</h2>
         <div className="Series">
           {data
             .filter(
