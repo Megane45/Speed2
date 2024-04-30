@@ -1,7 +1,6 @@
 import logo from "../assets/logom3.jpg";
 import React from "react";
 import "./NavBar.css";
-import Film from "./Film";
 
 function NavBar(props) {
   return (

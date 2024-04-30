@@ -1,5 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap");
+
+@font-face {
+  font-family: "PinkyLove";
+  src: url(../assets/PinkyLove.ttf);
+}
+@font-face {
+  font-family: "Skincake";
+  src: url(/src/assets/Skincake.ttf);
+}
+
+#root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: rgb(15, 201, 215);
+  background: #ffffff url(assets/collage.jpg);
+}
+.cards {
+  h2 {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+  }
+  .card {
+    border: solid 5px white;
+    width: 25%;
+    text-align: center;
+    -webkit-box-shadow: 3px 14px 15px 8px #000000;
+    box-shadow: 3px 14px 15px 8px #000000;
+    background-color: lightgray;
+    font-family: "PinkyLove";
+    font-size: 1.5rem;
+    h3 {
+      font-size: 2rem;
+      text-decoration: underline overline #000000;
+    }
+
+    img {
+      width: 70%;
+      max-height: 50%;
+      border-radius: 30%;
+      align-items: center;
+      text-align: center;
+      border: solid 5px black;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+    h5 {
+      text-decoration: underline;
+      font-size: 1.5rem;
+    }
+  }
+}
 .container-sm {
   display: flex;
   justify-content: center;
   margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  font-family: Prata;
+  font-weight: 0;
+  font-size: 14px;
+  color: #fff;
+  background: linear-gradient(179deg, #0066cc 0%, #00c5cc 68%);
+  padding: 10px 50px;
+  border: 2px solid #0066cc;
+  box-shadow: rgb(19, 144, 201) -1px 7px 24px 5px;
+  border-radius: 0px 0px 50px 50px;
+  transition: 689ms;
+  transform: translateY(0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transition: 689ms;
+  padding: 10px 57px;
+  transform: translateY(-0px);
+  background: linear-gradient(179deg, #0066cc 0%, #00c5cc 68%);
+  color: #0066cc;
+  border: solid 2px #0066cc;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 3rem 3rem 0 0;
+  background: #ffffff url(assets/cinema.jpg) center center/cover no-repeat;
 }

@@ -47,7 +47,7 @@ const series = [
   },
   {
     id: 6,
-    Nom: "The Handmaid’s Tale : la servante écarlate",
+    Nom: "The Handmaid’s Tale",
     description:
       "Dans une dictature où la stérilité a frappé les femmes, ces dernières sont divisées en trois catégories : les Epouses, qui dominent la maison, les Marthas, qui l'entretiennent, et les Servantes, dont le rôle est la reproduction.",
     image:
