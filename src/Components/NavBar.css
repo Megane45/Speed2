@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "Skincake";
+  src: url(../assets/Skincake.ttf);
+}
+@font-face {
+  font-family: "PinkyLove";
+  src: url(../assets/PinkyLove.ttf);
+}
+
 #root {
   margin: 0;
   padding: 0;
@@ -8,24 +17,22 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: rgb(10, 156, 171);
-  background: radial-gradient(
-    circle,
-    rgba(10, 156, 171, 1) 0%,
-    rgba(9, 15, 121, 0.8575805322128851) 100%
-  );
-  border: solid 10px black;
+  border: solid 3px black;
+  border-radius: 0 0 3rem 3rem;
+  background: #ffffff url(../assets/cinema.jpg) center center/cover no-repeat;
+
   h1 {
-    color: #e211d6;
-    text-shadow: 1px 0px 1px #cccccc, 0px 1px 1px #eeeeee, 2px 1px 1px #cccccc,
-      1px 2px 1px #eeeeee, 3px 2px 1px #cccccc, 2px 3px 1px #eeeeee,
-      4px 3px 1px #cccccc, 3px 4px 1px #eeeeee, 5px 4px 1px #cccccc,
-      4px 5px 1px #eeeeee, 6px 5px 1px #cccccc, 5px 6px 1px #eeeeee,
-      7px 6px 1px #cccccc;
     font-size: 4rem;
+    font-family: "Skincake";
+    color: white;
   }
   label {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-family: "PinkyLove";
+    display: flex;
+    flex-direction: column;
+    text-decoration: underline;
+    color: white;
   }
 
   img {

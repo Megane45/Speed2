@@ -25,16 +25,18 @@ function Film({ data, nom }) {
                 <h3>{film.Nom}</h3>
                 <img src={film.image} alt={film.Nom} />
                 <p>{film.description}</p>
-                <p>{film.dateDeSortie}</p>
+                <h5>Date de sortie: {film.dateDeSortie}</h5>
               </div>
             ))}
         </div>
       </section>
-      {showCount < data.length && (
-        <button className="btn" onClick={handleShowMore}>
-          Voir plus
-        </button>
-      )}
+      <div className="container-sm">
+        {showCount < data.length && (
+          <button className="btn" onClick={handleShowMore}>
+            Voir plus
+          </button>
+        )}
+      </div>
     </>
   );
 }

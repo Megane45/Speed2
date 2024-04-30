@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap");
+
+#root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #778da9;
+}
+
+.cards {
+  h2 {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+  }
+  .Series {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+
+    .card {
+      border: solid 5px white;
+      width: 25%;
+      text-align: center;
+      -webkit-box-shadow: 5px 5px 15px 5px #000000;
+      box-shadow: 5px 5px 15px 5px #000000;
+
+      img {
+        width: 70%;
+        max-height: 50%;
+        border-radius: 30%;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.btn {
+  font-family: Roboto, sans-serif;
+  font-weight: 0;
+  font-size: 14px;
+  color: #fff;
+  background: linear-gradient(90deg, #0066cc 0%, #c500cc 100%);
+  padding: 10px 30px;
+  border: 2px solid #0066cc;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+  border-radius: 50px;
+  transition: 1000ms;
+  transform: translateY(0);
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transition: 1000ms;
+  padding: 10px 50px;
+  transform: translateY(-0px);
+  background: linear-gradient(90deg, #0066cc 0%, #c500cc 100%);
+  color: #0066cc;
+  border: solid 2px #0066cc;
+}
